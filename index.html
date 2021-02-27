@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="root">
+        <h1>Currency Converter</h1>
+
+        <div class="conversion">
+            <div class="input">
+                <select onchange="convert(1)">
+                    <option value="USD">USD</option>
+                    <option value="BRL">BRL</option>
+                    <option value="EUR">EUR</option>
+                  </select>
+
+                <input type="text" value="1" oninput="convert(1)">
+            </div>
+
+            <div class="equal">=</div>
+
+            <div class="input">
+                
+                <select onchange="convert(1)">
+                    <option value="BRL">BRL</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+
+                <input type="text" oninput="convert(2)">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

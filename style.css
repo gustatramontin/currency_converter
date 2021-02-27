@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.root {
+    width: 100vw;
+    height: 100vh;
+    
+    background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 100%);
+    background-image: url("background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+
+    margin-top: 15px;
+}
+
+.conversion {
+    position: absolute;
+    top: 40%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+}
+
+.conversion .input {
+    display: flex;
+    flex-flow: column wrap;
+
+    margin: 0 1vw;
+}
+
+.conversion .input input {
+    height: 70px;
+    width: 300px;
+    font-size: 3rem;
+    padding: 10px;
+
+    outline: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+.conversion .input select {
+    width: fit-content;
+    height: 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.conversion .equal {
+    height: 70px;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 680px) {
+    .conversion {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conversion .input select {
+        font-size: 1.5rem;
+    }
+}
